@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>₿ CryptoTracker</h1>
+        <span class="status">● DEMO DATA</span>
+    </header>
+
+    <section class="welcome">
+        <h2>Crypto Market Dashboard</h2>
+        <p>Explore cryptocurrency prices in one place.</p>
+    </section>
+
+    <input
+        type="text"
+        id="search"
+        class="search-box"
+        placeholder="Search Bitcoin, Ethereum, BTC..."
+        aria-label="Search cryptocurrencies"
+    >
+
+    <main class="coin-grid" id="coin-grid">
+
+        <article class="coin-card" data-search="bitcoin btc">
+            <div class="coin-top">
+                <span class="coin-icon">₿</span>
+                <div>
+                    <h3 class="coin-name">Bitcoin</h3>
+                    <p class="coin-symbol">BTC</p>
+                </div>
+            </div>
+            <p class="coin-price">$65,000.00</p>
+            <p class="change positive">▲ +2.45% today</p>
+        </article>
+
+        <article class="coin-card" data-search="ethereum eth">
+            <div class="coin-top">
+                <span class="coin-icon">◆</span>
+                <div>
+                    <h3 class="coin-name">Ethereum</h3>
+                    <p class="coin-symbol">ETH</p>
+                </div>
+            </div>
+            <p class="coin-price">$3,200.00</p>
+            <p class="change positive">▲ +1.82% today</p>
+        </article>
+
+        <article class="coin-card" data-search="solana sol">
+            <div class="coin-top">
+                <span class="coin-icon">◎</span>
+                <div>
+                    <h3 class="coin-name">Solana</h3>
+                    <p class="coin-symbol">SOL</p>
+                </div>
+            </div>
+            <p class="coin-price">$145.00</p>
+            <p class="change negative">▼ -1.25% today</p>
+        </article>
+
+        <article class="coin-card" data-search="dogecoin doge">
+            <div class="coin-top">
+                <span class="coin-icon">Ð</span>
+                <div>
+                    <h3 class="coin-name">Dogecoin</h3>
+                    <p class="coin-symbol">DOGE</p>
+                </div>
+            </div>
+            <p class="coin-price">$0.16</p>
+            <p class="change positive">▲ +3.12% today</p>
+        </article>
+
+    </main>
+
+    <p id="no-results">No matching cryptocurrency found.</p>
+
+    <footer>
+        CryptoTracker | Educational Demo | Sample prices only
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 35px;
+        }
+
+        header h1 {
+            color: #7c9cff;
+            font-size: 28px;
+        }
+
+        .status {
+            color: #facc15;
+            font-size: 13px;
+        }
+
+        .welcome {
+            margin-bottom: 25px;
+        }
+
+        .welcome h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            color: #94a3b8;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            padding: 14px;
+            margin: 25px 0;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            background: #151e30;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box:focus {
+            border-color: #7c9cff;
+        }
+
+        .coin-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .coin-card {
+            background: #151e30;
+            border: 1px solid #26344d;
+            padding: 22px;
+            border-radius: 16px;
+            transition: transform 0.2s;
+        }
+
+        .coin-card:hover {
+            transform: translateY(-5px);
+            border-color: #7c9cff;
+        }
+
+        .coin-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .coin-icon {
+            font-size: 30px;
+        }
+
+        .coin-name {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .coin-symbol {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .coin-price {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .change {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .positive {
+            color: #4ade80;
+        }
+
+        .negative {
+            color: #fb7185;
+        }
+
+        #no-results {
+            display: none;
+            color: #94a3b8;
+            margin-top: 25px;
+        }
+
+        footer {
+            color: #64748b;
+            font-size: 13px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 18px;
+            }
+
+            .welcome h2 {
+                font-size: 24px;
+            }
+        }
